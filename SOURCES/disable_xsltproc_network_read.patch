@@ -1,0 +1,11 @@
+--- documentation/v9/Makefile.in	2014-12-04 21:20:04.806764917 +0000
++++ documentation/v9/Makefile.in	2014-12-04 21:19:59.071764572 +0000
+@@ -59,7 +59,7 @@
+ HTML_STYLESHEET ?= $(STYLESHEET_PREFIX)/xhtml/docbook.xsl
+ FO_STYLESHEET ?= $(STYLESHEET_PREFIX)/fo/docbook.xsl
+
+-XSLTPROC_OPTIONS ?= --xinclude
++XSLTPROC_OPTIONS ?= --nonet --xinclude
+ XSLTPROC_OPTIONS += --stringparam variablelist.term.break.after 1
+ #XSLTPROC_OPTIONS += --stringparam variablelist.term.separator ""
+ XSLTPROC_MANPAGES_OPTIONS ?= $(XSLTPROC_OPTIONS)

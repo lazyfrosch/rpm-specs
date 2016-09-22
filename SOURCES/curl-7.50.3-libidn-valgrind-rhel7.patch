@@ -1,0 +1,30 @@
+Avoid problems with valgrind and libidn
+
+See https://bugzilla.redhat.com/show_bug.cgi?id=678518
+
+This is a false-positive, caused by optimized gcc builds.
+
+--- tests/data/test2046.orig	2016-09-20 11:08:20.680784073 +0200
++++ tests/data/test2046	2016-09-20 11:09:58.901388838 +0200
+@@ -89,6 +89,9 @@
+ text/plain; charset=us-ascii
+ 200
+ </stdout>
++<valgrind>
++disable
++</valgrind>
+ 
+ </verify>
+ </testcase>
+--- tests/data/test2047.orig	2016-09-06 23:25:06.000000000 +0200
++++ tests/data/test2047	2016-09-20 11:17:27.644355344 +0200
+@@ -92,6 +92,9 @@
+ text/plain; charset=us-ascii
+ 200
+ </stdout>
++<valgrind>
++disable
++</valgrind>
+ 
+ </verify>
+ </testcase>

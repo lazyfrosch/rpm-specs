@@ -1,0 +1,11 @@
+--- scripts/global_common.conf	2015-05-12 08:08:52.034250237 -0500
++++ scripts/global_common.conf	2015-05-12 08:09:00.886244692 -0500
+@@ -3,7 +3,7 @@
+ # feature requests visit http://www.linbit.com
+ 
+ global {
+-	usage-count yes;
++	usage-count no;
+ 	# minor-count dialog-refresh disable-ip-verification
+ 	# cmd-timeout-short 5; cmd-timeout-medium 121; cmd-timeout-long 600;
+ }
